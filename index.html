@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+  <div class="header-container">
+    <div class="logo">Shopify</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">New</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Jeans</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <div class="container">
+    
+    <div class="photos">
+      <div class="main-photo image-zoom-container">
+        <img id="mainImage" src="https://spanx.com/cdn/shop/files/cwl_jeans_chalk_primary-min.png?v=1743773162&width=1000" alt="Main Image" />
+      </div>
+      <div class="thumbnail" id="thumbnailContainer">
+        <img src="https://spanx.com/cdn/shop/files/cwl_jeans_chalk_primary-min.png?v=1743773162&width=1000" alt="" class="src">
+        <img src="https://spanx.com/cdn/shop/files/cwl_jeans_chalk_cropped-min.png?v=1743773162&width=1000" alt="thumb1" />
+        <img src="https://spanx.com/cdn/shop/files/21284R-ChalkWash_PDP_031_HNMD_v2.jpg?v=1743773162&width=1000" alt="thumb2" />
+        <img src="https://spanx.com/cdn/shop/files/21284R-ChalkWash_PDP_058_HNMD.jpg?v=1743773162&width=1000" alt="thumb3" />
+        <img src="https://spanx.com/cdn/shop/files/21284R-ChalkWash_PDP_074_HNMD.jpg?v=1743773162&width=1000" alt="thumb4" />
+        <img src="https://spanx.com/cdn/shop/files/21284R-ChalkWash_PDP_086_HNMD.jpg?v=1743773162&width=1000" alt="thumb5" />
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="clothing">clothing &gt; jeans</div>
+      <div class="T">Available in Petite and Tall!</div>
+      <div class="E">SPANXshape™ EveryWear</div>
+      <div class="J">Cropped Wide Leg Jeans</div>
+      <div class="RS">₹1200</div>
+       <div class="color">
+    <label><strong>Choose Color:</strong></label>
+    <div class="colorbox">
+      <div class="one" data-color="beige" title="Beige"></div>
+      <div class="two" data-color="white" title="White"></div>
+      <div class="three" data-color="blue" title="Blue"></div>
+    </div>
+    <!-- Compare Colours Button -->
+<button id="compareColoursBtn">Compare Colours</button>
+
+<!-- Compare Colours Modal -->
+<div id="compareModal" role="dialog" aria-modal="true" aria-labelledby="compareTitle" class="modal">
+  <div class="modal-content" id="compareContent">
+    <h2 id="compareTitle">Select Colours to Compare</h2>
+    <div id="modalSwatches" class="modal-swatches">
+      <!-- Swatches will be injected here -->
+    </div>
+    <div id="selectedColoursDisplay" class="selected-colours">
+      <!-- Selected colours will show here -->
+    </div>
+    <button id="closeCompareBtn" class="modal-close-btn">Close</button>
+  </div>
+</div>
+
+  </div>
+      <div class="SIZE">Size:
+        <div class="s">S</div>
+        <div class="m">M</div>
+        <div class="l">L</div>
+      </div>
+      <div class="sizechart-container">
+  <button id="sizeChartBtn" class="sizechart-btn">Size Chart</button>
+</div>
+
+<!-- Modal structure -->
+<div id="sizeChartModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+  <div class="modal-content" role="document">
+    <button class="modal-close" aria-label="Close size chart">&times;</button>
+    <h2 id="modalTitle">Size Chart</h2>
+    <table class="size-table" role="table">
+      <thead>
+        <tr>
+          <th>Size</th>
+          <th>Chest (inches)</th>
+          <th>Waist (inches)</th>
+          <th>Length (inches)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>S</td><td>34-36</td><td>28-30</td><td>26</td></tr>
+        <tr><td>M</td><td>38-40</td><td>32-34</td><td>27</td></tr>
+        <tr><td>L</td><td>42-44</td><td>36-38</td><td>28</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+      <div class="review">
+        <div class="fit">Fit: Slightly Small</div>
+        <div class="length">Length: True to Size</div>
+      </div>
+      <div class="r">Based on 47 reviews</div>
+      <div class="addtocart">ADD TO CART</div>
+      <div class="name">This item received a name refresh. For additional information <a href="click here.">click here.</a>
+</div>
+    <section class="pair-well-with">
+  <h2>Pair Well With</h2>
+  <div class="carousel-wrapper">
+    <button class="carousel-arrow left-arrow" aria-label="Scroll Left">&#9664;</button>
+    <div class="carousel-container">
+      <div class="product-card">
+        <img src="https://spanx.com/cdn/shop/files/21300R-TimelessNavy_PDP_023_HN.jpg?v=1746197901&width=1000" alt="Product 1" />
+        <h3>Product 1</h3>
+        <p>₹1,130</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://spanx.com/cdn/shop/files/3e3d5bf3e34eea83e7757d3e2f67ffbf67c1271b.jpg?v=1742926508&width=1000" alt="Product 2" />
+        <h3>Product 2</h3>
+        <p>₹800</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://spanx.com/cdn/shop/files/blazer_e6c33fbb-72ad-4e32-9de1-739c6495c975.jpg?v=1727916612&width=1000" alt="Product 3" />
+        <h3>Product 3</h3>
+        <p>₹1,400</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://spanx.com/cdn/shop/files/60c3e6f22666727094a49eedc2bf7947276c2752.jpg?v=1739944599&width=1000" alt="Product 4" />
+        <h3>Product 4</h3>
+        <p>₹900</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://spanx.com/cdn/shop/files/8276c48468c0d516bd85ed44a9e14bd7c7b0aa81.jpg?v=1730837528&width=1000" alt="Product 5" />
+        <h3>Product 5</h3>
+        <p>₹500</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <button class="carousel-arrow right-arrow" aria-label="Scroll Right">&#9654;</button>
+  </div>
+</section>
+
+    </div>
+  </div>
+  <div class="line"></div>
+  <section class="bundle-section">
+  <h2>People also Bought these together</h2>
+  <div class="bundle-container">
+    <div class="bundle-product">
+      <img src="https://spanx.com/cdn/shop/files/c28b8de6221b74c1c96a071ee98fd33cb32b7116.jpg?v=1744831140&width=1000" alt="Main Product">
+      <p>Main Product</p>
+      <span>₹1,200</span>
+    </div>
+    <div class="plus-sign">+</div>
+    <div class="bundle-product">
+      <img src="https://spanx.com/cdn/shop/files/b14163356307a1d419149d044b52989eb0bce902.jpg?v=1736372996&width=1000" alt="Suggested Product 1">
+      <p>Suggested Product 1</p>
+      <span>₹800</span>
+    </div>
+    <div class="plus-sign">+</div>
+    <div class="bundle-product">
+      <img src="https://spanx.com/cdn/shop/files/75f1eb28e2250b384155d0779225ab2da60e61aa.jpg?v=1736793445&width=1000" alt="Suggested Product 2">
+      <p>Suggested Product 2</p>
+      <span>₹600</span>
+    </div>
+  </div>
+  <div class="bundle-total">
+    <strong>Total: ₹2,600</strong>
+    <button class="add-bundle-btn">Add Bundle to Cart</button>
+  </div>
+</section>
+
+  <div class="bottom-container">
+    <div class="love">
+        <div class="we">Why We Love It</div>
+        <div class="shape"><img class="pic" src="https://cdn.shopify.com/s/files/1/0549/4895/4134/files/3_new_shape.png?v=1745362029" alt="" class="src">
+            SPANXshape™ provides medium compression for a shaping effect</div>
+            <div class="shape"><img class="pic" src="https://cdn.shopify.com/s/files/1/0549/4895/4134/files/Hidden_tummy_shaping_technology.png?v=1745362029" alt="" class="src">
+            Built-in TummyTamer Tech™
+            </div>
+           
+            <div class="shape"><img class="pic"src="https://cdn.shopify.com/s/files/1/0549/4895/4134/files/Butt_Naked_c0fcb1b8-4953-42cf-af9c-f32c4942e998.png?v=1745362029" alt="" class="src"> Booty-lifting and leg-lengthening</div>
+    </div>
+    <div class="line"></div>
+    <div class="productdescription"><div class="drop"><div class="description">
+        Product Description </div><div><img class="minus" src="https://www.pngarts.com/files/3/Minus-PNG-Free-Download.png" alt="" class="src"></div></div>
+        <div class="des">Crafted from premium, 4-way stretch denim designed to hug your curves, these jeans are engineered with built-in targeted SPANX TummyTamer Tech™ that shapes your waist. Plus, with a cropped wide leg silhouette and high waist design, they elongate the leg and celebrate your figure. All you have to do is pull them on: no zippers, a faux button front, and faux front pockets (so no bulk!). This is denim done right.</div>
+    <div class="style">Style No. 21284R</div> 
+    </div>
+    <div class="line"></div>
+    <div class="fitting">
+        <div class="drop"><div class="sizetitle">
+        Size & Fit</div><div><img class="minus" src="https://www.pngarts.com/files/3/Minus-PNG-Free-Download.png" alt="" class="src"></div></div>
+        <ul>
+        <li class="point1">High-Rise Invisible Waistband: Provides shaping and compression from tummy through hip</li>
+        <li class="point1">Cropped Wide Leg: 12" approximate wide leg opening</li>
+        <li class="point1">Inseams: Petite 24.5" (ideal for 5'4" and under), Regular 26.5", Tall 29.5" (ideal for 5'11" and above)</li>
+        </ul>
+        </div>
+    <div class="line"></div>
+    <div class="details">
+        <div class="drop"><div class="detailstitle">
+       Details </div><div><img class="minus" src="https://www.pngarts.com/files/3/Minus-PNG-Free-Download.png" alt="" class="src"></div></div>
+      <ul>
+        <li class="point1">Denim with SPANX® Technology: With built-in TummyTamer Tech™, these jeans combine premium denim with the feel of SPANX</li>
+        <li class="point1">Premium 4-Way Stretch Denim: Offers flexibility and comfort</li>
+        <li class="point1">Cropped Wide Leg: Shapes and flatters your figure with a slightly roomy fit through the leg</li>
+        <li class="point1">Pull-On Design: A faux button front, no zippers, and faux front pockets for a smooth, bulk-free look</li>
+        <li class="point1">Look-Good Back Pockets: Functional back pockets strategically engineered and placed to lift your booty</li>
+        <li class="point1">Versatile Style: Easy to dress up or down for any occasion</li>
+        </ul>
+    </div>
+    <div class="line"></div>
+    <div class="care">
+        <div class="drop"><div class="caretitle">
+        Care Instructions</div><div><img class="minus" src="https://www.pngarts.com/files/3/Minus-PNG-Free-Download.png" alt="" class="src"></div></div>
+        <ul>
+        <li class="point1">Body: 87% Cotton, 9% Polyester, 4% Elastane. Lining: 68% Polyester, 32% Cotton.</li>
+        <li class="point1">Machine Wash Cold, Gentle Cycle. With Like Colors. Only Non-Chlorine Bleach When Needed. Tumble Dry Low. Low Iron If Needed. Or Dry Clean.</li>
+        <li class="point1">Inseams: Petite 24.5" (ideal for 5'4" and under), Regular 26.5", Tall 29.5" (ideal for 5'11" and above)</li>
+        </ul>
+    </div>
+    <div class="line"></div>
+    <div class="jeans">
+    <div class="jeanstitle">Shaping Jeans Worth Raving About</div>
+    <div class="moreproducts">
+        <div class="option1"><img src="https://spanx.com/cdn/shop/files/21164R-AuthenticBlue_WHM_BT_TheFace_06.jpg?v=1725461755&width=568" alt=""><div class="n">From Daniel</div>
+    <div class="stat">"This is the first pair of jeans I bought in 4 years since having two babies!They fit great!I'll be ordering these soon!" </div></div>
+        <div class="option1"><img src="https://spanx.com/cdn/shop/files/20547R-RawIndigoWash_WHM_BT_TheFace_17.jpg?v=1736882278&width=568" alt="" class="src"><div class="n">From Emiley</div>
+    <div class="stat">"These wide leg jeans are just wow can't wait to buy more!" </div></div>
+        <div class="option1"><img src="https://spanx.com/cdn/shop/files/21266R-RAWIN_WHM_BT_TheFace_35_1__MD.jpg?v=1736878176&width=568" alt="" class="src"><div class="n">From Angelina</div>
+    <div class="stat">"Perfect fit for everyday wear!Do yourself a favor and add to cart!" </div></div>
+        <div class="option1"><img src="https://spanx.com/cdn/shop/files/21650R-AuthenticBlue_PDP_006_HNMD.jpg?v=1742329456&width=568" alt="" class="src"><div class="n">From Yolanda</div>
+    <div class="stat">"Just received my jeans and i am in LOVE!They fit perfectly.My first Spanx anything..will be sure to be a repeated buyer" </div></div>
+        </div>
+        </div>
+    </div>
+     <footer class="end">
+  <p>© 2025 Spanx, LLC.</p>
+  <div class="footer-links">
+    <a href="#">Terms of Use</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Cookie Policy</a>
+    <a href="#">Do Not Share Or Sell My Personal Information</a>
+    <a href="#">CA Transparency Act</a>
+    <a href="#">Accessibility</a>
+    <a href="#">Sitemap</a>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
