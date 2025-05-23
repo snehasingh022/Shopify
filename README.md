@@ -34,5 +34,4 @@ This is a fully responsive and feature-rich e-commerce **Product Detail Page** b
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/product-detail-page.git
-cd product-detail-page
+git clone https://github.com/snehasingh022/Shopify.git
